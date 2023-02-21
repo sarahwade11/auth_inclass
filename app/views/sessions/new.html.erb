@@ -1,0 +1,14 @@
+<h1> Login </h1>
+
+<%= form_with :url => "/sessions" do |form| %>
+    <%#we copy and pasted from users new, but deleted name becuase you don't need that as an existing user%>
+  <p>
+    <%= form.label "email" %>
+    <%= form.text_field "email" %>
+    <%= form.label "password" %>
+    <%= form.text_field "password" %>
+  </p>
+  <p>
+    <%= form.submit "Login" %>
+  </p>
+<% end %>
